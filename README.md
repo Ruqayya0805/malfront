@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Malexe - EXE File Malware Analysis
 
-## Getting Started
+## Overview
+Malexe is a web application designed to analyze `.exe` files for potential security threats. It leverages multiple analysis techniques, including VirusTotal API, CAPA, and a VM sandbox, to generate comprehensive security reports. The application helps users determine whether a file is safe or malicious by executing it in an isolated environment and retrieving detailed behavioral reports.
 
-First, run the development server:
+## Features
+- **File Upload & Analysis**: Users can upload `.exe` files for security scanning.
+- **VirusTotal API Integration**: Cross-checks the file against VirusTotal's database for known threats.
+- **CAPA Analysis**: Uses the CAPA tool to analyze capabilities and detect suspicious behavior.
+- **VM Sandbox Execution**: Runs files in a virtual machine to observe runtime behavior and collect reports.
+- **User-Friendly Interface**: Built with React and Tailwind CSS for a smooth user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+- **Frontend**: React, Tailwind CSS
+- **Backend & Analysis Tools**: VirusTotal API, CAPA, Virtual Machine Sandbox
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributors
+- **Ruqayya Shah** -- Developed the frontend and integrated API-based analysis tools and contributed to UI enhancements and frontend optimization.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Use
+1. Upload an `.exe` file via the web interface.
+2. The file is analyzed using VirusTotal, CAPA, and VM sandbox.
+3. Receive a detailed security report indicating whether the file is safe or malicious.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Improvements
+- Enhancing the accuracy of file analysis using AI-based threat detection.
+- Implementing real-time notifications for scanning results.
+- Expanding support for other file types beyond `.exe`.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
